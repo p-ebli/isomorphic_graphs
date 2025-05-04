@@ -56,7 +56,7 @@ generate_signed_graphs_hashed <- function(n) {
     adj_vals <- base3_to_signed(vec)
     mat <- matrix(adj_vals, nrow = n, byrow = TRUE)
     
-    #
+    
     sig <- canonical_signature(mat, perms)
     h <- digest(sig)
     
