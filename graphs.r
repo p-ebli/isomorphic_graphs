@@ -20,7 +20,7 @@ generate_signed_graphs_hashed <- function(n) {
   
   
   base3_to_signed <- function(vec) {
-    sapply(vec, function(x) if (x == 0) 0 else if (x == 1) -1 else 1)
+    sapply(vec, function(x) if (x == 0) 0 else if (x == 1) 1 else -1)
   }
   
   
